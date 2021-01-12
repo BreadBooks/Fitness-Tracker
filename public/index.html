@@ -7,10 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css"/>
   <title>Fitness Tracker</title>
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -27,22 +26,20 @@
       </div>
     </div>
   </nav>
-  <div class="wrapper workout">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
     <div class="container workout">
-        <div class="prev-workout">
-
-          <div>
             <div class="workout-stats"></div>
             <div class="buttons">
               <a id="continue-btn" href="stats.html" class="btn btn-success">Continue Workout</a>
               <a type="button" href="exercise.html" class="btn btn-primary">New Workout</a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+
   <script src="api.js"></script>
   <script src="workout.js"></script>
   <script src="/index.js"></script>
