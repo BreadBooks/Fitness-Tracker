@@ -8,7 +8,7 @@ module.exports = (app) => {
     });
 
     app.get("/api/workouts/range", (request, response) => {
-        db.Workout.find({}).limit(7) // finds 7 most recent (since organized by date)
+        db.Workout.find({}).limit(7) 
         .then((dbWorkouts) => { response.json(dbWorkouts) })
         .catch((err) => { response.json(err) });
     });
