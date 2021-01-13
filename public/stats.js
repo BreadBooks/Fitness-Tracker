@@ -1,5 +1,3 @@
-// get all workout data from back-end
-
 fetch("/api/workouts/range")
   .then(response => {
     return response.json();
@@ -40,8 +38,8 @@ function populateChart(data) {
   const colors = generatePalette();
 
   let line = document.querySelector("#canvas").getContext("2d");
-  let bar = document.querySelector("#canvas2").getContext("2d");
-  let pie = document.querySelector("#canvas3").getContext("2d");
+  let pie = document.querySelector("#canvas2").getContext("2d");
+  let bar = document.querySelector("#canvas3").getContext("2d");
   let pie2 = document.querySelector("#canvas4").getContext("2d");
 
   let lineChart = new Chart(line, {
@@ -59,8 +57,8 @@ function populateChart(data) {
       datasets: [
         {
           label: "Workout Duration In Minutes",
-          backgroundColor: "red",
-          borderColor: "red",
+          backgroundColor: "pink",
+          borderColor: "pink",
           data: durations,
           fill: false
         }
@@ -110,19 +108,19 @@ function populateChart(data) {
           data: pounds,
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
+            "rgba(54, 235, 235, 0.2)",
             "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
+            "rgba(75, 192, 110, 0.2)",
             "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)"
+            "rgba(131, 64, 255, 0.2)"
           ],
           borderColor: [
             "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
+            "rgb(54, 229, 235)",
             "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
+            "rgb(75, 192, 100)",
             "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)"
+            "rgb(122, 92, 255)"
           ],
           borderWidth: 1
         }

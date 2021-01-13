@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <title>Fitness Tracker</title>
 </head>
-<body>
+
+<body class="index">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Fitness Tracker</a>
@@ -26,26 +30,34 @@
       </div>
     </div>
   </nav>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  <header>
+    <h1 id="fonts">Fitness Tracker</h1>
+  </header>
+  <div class="ui container workout" >
+    <div class="ui raised card m-auto">
+      <div class="prev-workout">
+        <h3 id="fonts">Last Workout</h3>
+        <div>
+          <div class="workout-stats"></div>
+          <div class="buttons">
+            <a id="continue-btn" href="/exercise?" class="huge ui violet button">Continue Workout</a>
+            <a href="/exercise" class="huge pink ui button" id="fonts">New Workout</a>
+          </div>
+        </div>
+      </div>
+      <div class="new-workout">
+        <h3>Create Your First Workout</h3>
+      </div>
     </div>
   </div>
-    <div class="container workout">
-            <div class="workout-stats"></div>
-            <div class="buttons">
-              <a id="continue-btn" href="stats.html" class="btn btn-success">Continue Workout</a>
-              <a type="button" href="exercise.html" class="btn btn-primary">New Workout</a>
-            </div>
-          </div>
-
-  <script src="api.js"></script>
-  <script src="workout.js"></script>
+  </div>
+  </div>
+  <div id="toast">
+    Workout Added Successfully!
+  </div>
+  <script src="/api.js"></script>
+  <script src="/workout.js"></script>
   <script src="/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
