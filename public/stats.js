@@ -56,7 +56,7 @@ function populateChart(data) {
       ],
       datasets: [
         {
-          label: "Workout Duration In Minutes",
+          label: "Time Working Out",
           backgroundColor: "pink",
           borderColor: "pink",
           data: durations,
