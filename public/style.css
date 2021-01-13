@@ -22,6 +22,7 @@ body,
 .wrapper {
   height: 100%;
  background-color: rgba(150, 150, 150, 0.582);
+
 }
 
 body {
@@ -119,6 +120,7 @@ input:focus {
 .m-auto {
   margin: 0 auto;
   width: 500px;
+  background-color: rgb(227, 192, 255);
 }
 
 form .workout-type,
